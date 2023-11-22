@@ -12,7 +12,6 @@ export const CategoryWrapper=styled.div`
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  padding: 0 3.1rem 0 2.7rem ;
+  padding: 8.5rem 2.4rem 22.3rem 2.5rem ; 
 
-  background-color: #ccc; /*배경 구문하려고 */
 `
