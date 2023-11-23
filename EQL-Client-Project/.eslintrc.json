@@ -3,13 +3,16 @@
     "browser": true,
     "es2021": true
   },
+  "plugins": ["@typescript-eslint", "react", "import"],
+
   "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
     "airbnb",
     "airbnb-typescript",
+    "plugin:react/recommended",
     "airbnb/hooks",
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
@@ -22,7 +25,7 @@
       "tsx": true
     }
   },
-  "plugins": ["@typescript-eslint", "react"],
+
   "ignorePatterns": ["build", "dist", "public"], //lint 무시파일
   "rules": {
     "import/prefer-default-export": "off", //확장자명 on
@@ -36,6 +39,23 @@
     "react/function-component-definition": [
       2,
       { "namedComponents": ["arrow-function", "function-declaration"] }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", ["parent", "sibling"], "index"], //import 순서를 고정. builtin- 외부- 내부
+        "pathGroups": [
+          //react 컴포넌트가 builtin 뒤에 (external import 앞에 나오도록 설정)
+          { "pattern": "react", "group": "builtin", "position": "after" },
+          { "pattern": "react-dom", "group": "builtin", "position": "after" }
+        ],
+        "pathGroupsExcludedImportTypes": ["react", "react-dom"], //pathGroups가 올바르게 적용하기 위해.. (확실치 않음)
+        "alphabetize": {
+          "order": "asc", //알파벳 순서 정렬 방식
+          "caseInsensitive": true //알파벳 대소문자 구분
+        },
+        "newlines-between": "always" // group들 사이마다 개행 적용 (group 내부에서 개행 적용 불가)
+      }
     ]
   }
 }

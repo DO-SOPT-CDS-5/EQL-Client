@@ -11,11 +11,8 @@ const colors = {
   grey6: '#f2f2f2',
   grey7: '#FAFAFA',
   white: '#fffff',
-};
-
-const transparencies = {
-  forRed: '80%',
-  forWhite: '40%',
+  red_transparent: 'rgba(234, 50, 35, 0.80)',
+  white_transparent: 'rgba(255, 255, 255, 0.40)',
 };
 
 type Font = {
@@ -23,13 +20,24 @@ type Font = {
   weight: number;
   size: number;
   lineHeight: number;
+  letterSpacing?: number;
+  textDecorationLine?: string;
 };
-const FONT = ({ family, weight, size, lineHeight }: Font): string => {
+const FONT = ({
+  family,
+  weight,
+  size,
+  lineHeight,
+  letterSpacing,
+  textDecorationLine,
+}: Font): string => {
   return `
     font-family: ${family};
     font-weight : ${weight};
     font-size : ${size}rem;
-    line-height : ${lineHeight}rem;
+    line-height : ${lineHeight};
+    letter-spacing: ${letterSpacing}px;
+    text-decoration-line: ${textDecorationLine};
     `;
 };
 
@@ -45,31 +53,104 @@ const fonts = {
   title4: FONT({ family: 'Pretendard Variable', weight: 700, size: 2.6, lineHeight: 1.3 }),
 
   subtitle1: FONT({ family: 'Pretendard Variable', weight: 600, size: 2.8, lineHeight: 1.3 }),
-  subtitle_underlined1: FONT({ family: 'Pretendard Variable', weight: 600, size: 2, lineHeight: 1.4 }),
+  subtitle_underlined1: FONT({
+    family: 'Pretendard Variable',
+    weight: 600,
+    size: 2,
+    lineHeight: 1.4,
+    letterSpacing: -0.6,
+    textDecorationLine: 'underline',
+  }),
 
-  body1: FONT({ family: 'Pretendard Variable', weight: 500, size: 2.4, lineHeight: 1.4 }),
-  body2: FONT({ family: 'Pretendard Variable', weight: 600, size: 2, lineHeight: 1.6 }),
-  body3: FONT({ family: 'Pretendard Variable', weight: 500, size: 2, lineHeight: 1.6 }),
-  body4: FONT({ family: 'Pretendard Variable', weight: 600, size: 1.8, lineHeight: 1.6 }),
-  body5: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.8, lineHeight: 1.6 }),
-  body6: FONT({ family: 'Pretendard Variable', weight: 600, size: 1.6, lineHeight: 1.6 }),
-  body7: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.6, lineHeight: 1.5 }),
+  body1: FONT({
+    family: 'Pretendard Variable',
+    weight: 500,
+    size: 2.4,
+    lineHeight: 1.4,
+    letterSpacing: -0.26,
+  }),
+  body2: FONT({
+    family: 'Pretendard Variable',
+    weight: 600,
+    size: 2,
+    lineHeight: 1.6,
+    letterSpacing: -0.6,
+  }),
+  body3: FONT({
+    family: 'Pretendard Variable',
+    weight: 500,
+    size: 2,
+    lineHeight: 1.6,
+    letterSpacing: -0.6,
+  }),
+  body4: FONT({
+    family: 'Pretendard Variable',
+    weight: 600,
+    size: 1.8,
+    lineHeight: 1.6,
+    letterSpacing: -0.18,
+  }),
+  body5: FONT({
+    family: 'Pretendard Variable',
+    weight: 500,
+    size: 1.8,
+    lineHeight: 1.6,
+    letterSpacing: -0.18,
+  }),
+  body6: FONT({
+    family: 'Pretendard Variable',
+    weight: 600,
+    size: 1.6,
+    lineHeight: 1.6,
+    letterSpacing: -0.16,
+  }),
+  body7: FONT({
+    family: 'Pretendard Variable',
+    weight: 500,
+    size: 1.6,
+    lineHeight: 1.5,
+    letterSpacing: -0.48,
+  }),
   body8: FONT({ family: 'Pretendard Variable', weight: 600, size: 1.4, lineHeight: 1.4 }),
-  body_underlined8: FONT({ family: 'Pretendard Variable', weight: 600, size: 1.4, lineHeight: 1.4 }),
+  body_underlined8: FONT({
+    family: 'Pretendard Variable',
+    weight: 600,
+    size: 1.4,
+    lineHeight: 1.4,
+    letterSpacing: -0.14,
+    textDecorationLine: 'underline',
+  }),
   body9: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.4, lineHeight: 1.4 }),
-  body10: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.2, lineHeight: 1.6 }),
+  body10: FONT({
+    family: 'Pretendard Variable',
+    weight: 500,
+    size: 1.2,
+    lineHeight: 1.6,
+    letterSpacing: 0.12,
+  }),
 
-  detail1: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.0, lineHeight: 1.6 }),
-  
-  number_strikethrough1: FONT({ family: 'Pretendard Variable', weight: 500, size: 1.4, lineHeight: 1.6 }),
+  detail1: FONT({
+    family: 'Pretendard Variable',
+    weight: 500,
+    size: 1.0,
+    lineHeight: 1.6,
+    letterSpacing: 0.1,
+  }),
+
+  number_strikethrough1: FONT({
+    family: 'Pretendard Variable',
+    weight: 500,
+    size: 1.4,
+    lineHeight: 1.6,
+    letterSpacing: -0.28,
+    textDecorationLine: 'strikethrough',
+  }),
 };
 
 export type ColorsTypes = typeof colors;
 export type FontsTypes = typeof fonts;
-export type TransparenciesTypes = typeof transparencies;
 
 export const theme: DefaultTheme = {
   colors,
-  transparencies,
   fonts,
 };

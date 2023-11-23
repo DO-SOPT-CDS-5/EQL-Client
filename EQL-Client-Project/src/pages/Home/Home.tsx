@@ -7,7 +7,8 @@ const Home = () => {
 
 export default Home;
 
-const Title1 = styled.h1`
-  font-size: ${({ theme }) => theme.fonts.body2};
+const Title1 = styled.div`
+  height: 151.7rem;
   margin: 2rem;
+  font-size: ${({ theme }) => theme.fonts.body2};
 `;
