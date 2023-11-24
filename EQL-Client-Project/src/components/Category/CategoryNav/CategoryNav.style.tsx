@@ -7,9 +7,6 @@ export const CategoryNavContainer=styled.nav`
 
   width: 34.8rem;
   max-width: 348px;
-
-  border: 1px solid red;
-  
   
 `
 export const CategoryNavTitle=styled.div`
