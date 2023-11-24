@@ -12,16 +12,16 @@ const CategoryItemDetail = () => {
 
   return (
     <S.Container>
-      {CATEGORYDETAILS.map((categorydetail)=>(
+      {CATEGORYDETAILS.map(({english,korean})=>(
         <S.Wrapper 
-          key={categorydetail.english} 
-          $keyValue={categorydetail.english} 
+          key={english} 
+          $keyValue={english} 
           $activeTitle={activeTitle}>
             <div className='titleContainer'>
-              <span className='engTitle'>{categorydetail.english}</span>
-              <span className='koTitle'>{categorydetail.korean}</span>
+              <span className='engTitle'>{english}</span>
+              <span className='koTitle'>{korean}</span>
             </div>
-            {(activeTitle===categorydetail.english) && <IcCheck/>}
+            {(activeTitle===english) && <IcCheck/>}
         </S.Wrapper>
       ))}
     </S.Container>
