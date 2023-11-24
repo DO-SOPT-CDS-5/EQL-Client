@@ -8,7 +8,6 @@ height: 6rem;
 border-bottom: ${({ $active, theme }) => 
   $active ? `3px solid ${theme.colors.black}` : `1px solid ${theme.colors.grey6}`
 };
-
   & > span:nth-child(1){
     padding-right:0.8rem;
     font: ${({ theme }) => theme.fonts.body4};
@@ -16,5 +15,9 @@ border-bottom: ${({ $active, theme }) =>
   & > span:nth-child(2){
     font: ${({ theme }) => theme.fonts.body6};
     color: ${({ theme }) => theme.colors.grey3};
+  }
+
+  &:hover{
+    cursor:pointer
   }
 `

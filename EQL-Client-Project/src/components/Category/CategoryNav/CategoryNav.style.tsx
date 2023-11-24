@@ -5,7 +5,8 @@ export const CategoryNavContainer=styled.nav`
   flex-direction: column;
   gap: 6.4rem;
 
-  width: 34.8rem;
+  width: 32.1rem;
+  min-width: 32.1rem;
   max-width: 348px;
   
 `
