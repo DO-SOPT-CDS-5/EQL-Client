@@ -1,6 +1,7 @@
 import * as S from './CategoryItemDatail.style.tsx';
 import {CATEGORYDETAILS} from '../../../constants/categoryDetails.ts';
 import { useState } from 'react';
+import { IcCheck } from '../../../assets/svgs/0_icons.ts';
 
 
 
@@ -16,8 +17,11 @@ const CategoryItemDetail = () => {
           key={categorydetail.english} 
           $keyValue={categorydetail.english} 
           $activeTitle={activeTitle}>
-        <span className='engTitle'>{categorydetail.english}</span>
-        <span className='koTitle'>{categorydetail.korean}</span>
+            <div className='titleContainer'>
+              <span className='engTitle'>{categorydetail.english}</span>
+              <span className='koTitle'>{categorydetail.korean}</span>
+            </div>
+            {(activeTitle===categorydetail.english) && <IcCheck/>}
         </S.Wrapper>
       ))}
     </S.Container>
