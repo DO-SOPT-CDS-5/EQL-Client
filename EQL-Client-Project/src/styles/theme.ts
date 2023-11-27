@@ -10,7 +10,7 @@ const colors = {
   grey5: '#EBEFF5',
   grey6: '#f2f2f2',
   grey7: '#FAFAFA',
-  white: '#fffff',
+  white: '#ffffff',
   red_transparent: 'rgba(234, 50, 35, 0.80)',
   white_transparent: 'rgba(255, 255, 255, 0.40)',
 };
