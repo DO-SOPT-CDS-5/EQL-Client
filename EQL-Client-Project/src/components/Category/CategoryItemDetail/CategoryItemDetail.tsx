@@ -1,5 +1,5 @@
 import * as S from './CategoryItemDatail.style.tsx';
-import {CATEGORYDETAILS} from '../../../constants/categoryDetails.ts';
+import { CATEGORYDETAILS } from '../../../constants/categoryDetails.ts';
 import { useState } from 'react';
 import { IcCheck } from '../../../assets/svgs/0_icons.ts';
 
