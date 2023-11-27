@@ -25,6 +25,7 @@ import IcSmallstarGray from './IcSmallstarGray.svg?react';
 import IcUndo from './IcUndo.svg?react';
 import IcArrowBreadCrumb from './IcArrowBreadcrumb.svg?react';
 import IcBrandImg from './IcBrandImg.svg?react';
+import IcNew from './IcNew.svg?react';
 export {
   IcArrow,
   IcArrowBlackLeft,
@@ -53,4 +54,5 @@ export {
   IcArrowBreadCrumb,
   IcBrandImg,
   IcOrderArrowRight,
+  IcNew
 };
