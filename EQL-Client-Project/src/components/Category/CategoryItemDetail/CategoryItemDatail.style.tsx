@@ -20,8 +20,7 @@ export const Container=styled.ul`
 `
 
 type WrapperProps = {
-  $keyValue:string;
-  $activeTitle:string;
+  $isSelected:boolean;
 }
 
 export const Wrapper = styled.li<WrapperProps>`
@@ -36,15 +35,15 @@ export const Wrapper = styled.li<WrapperProps>`
   & .engTitle{
     padding-right: 0.8rem;
     font: ${({ theme }) => theme.fonts.body5};
-    color: ${({ $keyValue,$activeTitle,theme }) => 
-    ($activeTitle!==$keyValue)? theme.colors.grey2: theme.colors.black};
+    color: ${({ $isSelected,theme }) => 
+    ($isSelected)? theme.colors.black:theme.colors.grey2};
   }
 
   & .koTitle{
-    font: ${({ $keyValue,$activeTitle,theme }) => 
-    ($activeTitle!==$keyValue)? theme.fonts.body9: theme.fonts.body7};
-    color: ${({ $keyValue,$activeTitle,theme }) => 
-    ($activeTitle!==$keyValue)? theme.colors.grey3: theme.colors.black};
+    font: ${({ $isSelected,theme }) => 
+    ($isSelected)?  theme.fonts.body7:theme.fonts.body9};
+    color: ${({ $isSelected,theme }) => 
+    ($isSelected)?  theme.colors.black:theme.colors.grey3};
   }
 
   &:hover{

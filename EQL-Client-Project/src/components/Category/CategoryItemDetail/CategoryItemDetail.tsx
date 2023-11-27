@@ -19,8 +19,7 @@ const CategoryItemDetail = ({isOpen}:CategoryItemDetailProps) => {
         {CATEGORYDETAILS.map(({english,korean})=>(
           <S.Wrapper 
             key={english} 
-            $keyValue={english} 
-            $activeTitle={activeTitle}>
+            $isSelected={english===activeTitle}>
               <div className='titleContainer'>
                 <span className='engTitle'>{english}</span>
                 <span className='koTitle'>{korean}</span>
