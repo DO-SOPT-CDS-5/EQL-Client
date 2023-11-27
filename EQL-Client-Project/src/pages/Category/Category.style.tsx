@@ -10,6 +10,6 @@ export const CategoryWrapper=styled.div`
 
   width: 100%;
   height: 100%;
-  padding: 8.5rem 3rem 22.3rem 3rem ; 
+  padding: 0 3rem 22.5rem 3rem ; 
 
 `

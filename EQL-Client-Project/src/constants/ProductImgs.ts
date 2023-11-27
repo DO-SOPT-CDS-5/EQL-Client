@@ -27,7 +27,7 @@ import {  ImgProduct1,
   ImgProduct27,
   ImgProduct28,
   ImgProduct29,
-  ImgProduct30 } from "../assets/Images/0_images"
+  ImgProduct30 } from "../assets/images/0_images.ts";
 
 export const PRODUCTIMGS=[
   "0번째 이미지 없음",
