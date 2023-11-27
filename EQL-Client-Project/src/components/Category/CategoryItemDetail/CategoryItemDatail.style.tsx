@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const HiddenContainer =styled.div<{$isOpen:boolean}>`
+  max-height: ${({ $isOpen }) => ($isOpen ? '100rem' : '0')};
+  transition: max-height 0.7s ease-in-out;
+`;
+
 export const Container=styled.ul`
   display: flex;
   flex-direction: column;
@@ -10,6 +15,7 @@ export const Container=styled.ul`
   text-justify: center;
 
   background-color: ${({ theme }) => theme.colors.grey7};
+;
 
 `
 

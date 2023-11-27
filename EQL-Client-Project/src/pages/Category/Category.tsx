@@ -1,4 +1,3 @@
-import React from 'react';
 import * as S from './Category.style';
 import CategoryNav from '../../components/category/CategoryNav/CategoryNav';
 import CategoryMainContent from '../../components/category/CategoryMainContent/CategoryMainContent';

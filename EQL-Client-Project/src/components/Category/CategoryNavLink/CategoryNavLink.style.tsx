@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
-//acive가 true이면 borderbottom 두껍게
-export const Wrapper=styled.li<{$active?:boolean}>`
+/** category nav의 타이틀 부분입니다 */
+export const Wrapper=styled.div<{$active?:boolean}>`
 display: flex;
 align-items:center;
+
 height: 6rem;
+
+background-color: ${({ theme }) => theme.colors.white};
 border-bottom: ${({ $active, theme }) => 
   $active ? `3px solid ${theme.colors.black}` : `1px solid ${theme.colors.grey6}`
 };

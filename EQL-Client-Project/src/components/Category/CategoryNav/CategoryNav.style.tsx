@@ -21,3 +21,9 @@ export const CategoryNavList=styled.ul`
   flex-direction: column;
 `
 
+export const CategoryNavItem=styled.li`
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+`
+
