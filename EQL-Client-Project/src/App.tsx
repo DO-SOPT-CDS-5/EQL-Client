@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 import GlobalStyle from './styles/globalStyle';
 import LayoutComponent from './components/common/LayoutComponent';
 import Router from './Router';

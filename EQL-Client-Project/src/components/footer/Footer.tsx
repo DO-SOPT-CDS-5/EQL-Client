@@ -16,7 +16,7 @@ const Footer = () => {
             </S.InfoText>
             <S.InfoText>
               통신판매업신고번호 제 2009-서울강남-00826호 /
-              <S.InfoLinkText>하나 은행 구매안전 서비스</S.InfoLinkText>
+              <S.InfoLinkText> 하나 은행 구매안전 서비스</S.InfoLinkText>
             </S.InfoText>
             <S.InfoText>개인정보보호 책임자 윤인수 / 호스팅 서비스 (주)한섬</S.InfoText>
           </S.InfoTextContainer>
