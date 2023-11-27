@@ -14,8 +14,8 @@ const CategoryNav = () => {
   return (
     <S.CategoryNavContainer>
       <S.CategoryNavTitle>
-        <div>우먼</div>
-        <div>CATEGORY</div>
+        <p>우먼</p>
+        <p>CATEGORY</p>
       </S.CategoryNavTitle>
       <S.CategoryNavList>
         {/* 네비게이션 바 부분 */}
