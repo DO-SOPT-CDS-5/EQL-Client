@@ -3,11 +3,8 @@ import styled from 'styled-components';
 export const CategoryMainContent=styled.div`
   display: flex;
   flex-direction: column;
-
   width: 100%;
   margin-top: 6rem;
-
-  border: 1px solid red;
 `
 export const ProductListHeader=styled.div`
   display: flex;
@@ -24,3 +21,4 @@ export const ProductListHeader=styled.div`
     font: ${({ theme }) => theme.fonts.body8};
   }
 `
+

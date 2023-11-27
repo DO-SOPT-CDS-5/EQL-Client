@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
-//00개 상품 있습니다 아래 , 리스트 부분감싸는 가장 외부 컴포넌트
 export const Container=styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+`
+
+//00개 상품 있습니다 아래 , 리스트 부분감싸는 가장 외부 컴포넌트
+export const ItemsWrapper=styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -70,4 +76,21 @@ export const ItemFavorite=styled.div`
 
   font: ${({ theme }) => theme.fonts.body8};
   color: ${({ theme }) => theme.colors.grey2};
+`
+
+export const PagenationNav=styled.nav`
+  display: flex;
+  align-items: center;
+  margin-top: 14.9rem;
+  
+`
+
+export const PagenationBtn=styled.button<{$isSeleted:boolean}>`
+  margin-left: 2.5rem;
+  font: ${({ $isSeleted,theme }) => $isSeleted? theme.fonts.body4:theme.fonts.body5};
+  color: ${({ $isSeleted,theme }) => $isSeleted? theme.colors.black:theme.colors.grey2};
+  
+  &:nth-child(3){
+    margin-right: 1.7rem;
+  }
 `

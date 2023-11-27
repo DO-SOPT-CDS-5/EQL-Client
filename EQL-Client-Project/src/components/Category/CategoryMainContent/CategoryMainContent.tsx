@@ -1,6 +1,6 @@
 import * as S from './CategoryMainContent.style';
 import CategoryFilter from '../CategoryFilter/CategoryFilter.tsx';
-import CategoryProductList from '../CategoryProductList/CategoryproductList.tsx';
+import CategoryProductList from '../CategoryProductList/CategoryProductList.tsx';
 import { IcArrowDown } from '../../../assets/svgs/0_icons.ts';
 
 const CategoryMainContent = () => {
