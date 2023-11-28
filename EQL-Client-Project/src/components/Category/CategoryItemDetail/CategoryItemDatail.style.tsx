@@ -28,18 +28,18 @@ export const Wrapper = styled.li<WrapperProps>`
   justify-content: space-between;
   
 
-  & > .titleContainer{
+  & > .title-container{
     min-width: 25rem;
   }
 
-  & .engTitle{
+  & .eng-title{
     padding-right: 0.8rem;
     font: ${({ theme }) => theme.fonts.body5};
     color: ${({ $isSelected,theme }) => 
     ($isSelected)? theme.colors.black:theme.colors.grey2};
   }
 
-  & .koTitle{
+  & .ko-title{
     font: ${({ $isSelected,theme }) => 
     ($isSelected)?  theme.fonts.body7:theme.fonts.body9};
     color: ${({ $isSelected,theme }) => 

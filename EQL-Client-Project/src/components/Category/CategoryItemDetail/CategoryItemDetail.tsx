@@ -20,9 +20,9 @@ const CategoryItemDetail = ({isOpen}:CategoryItemDetailProps) => {
           <S.Wrapper 
             key={english} 
             $isSelected={english===activeTitle}>
-              <div className='titleContainer'>
-                <span className='engTitle'>{english}</span>
-                <span className='koTitle'>{korean}</span>
+              <div className='title-tontainer'>
+                <span className='eng-title'>{english}</span>
+                <span className='ko-title'>{korean}</span>
               </div>
               {(activeTitle===english) && <IcCheck/>}
           </S.Wrapper>

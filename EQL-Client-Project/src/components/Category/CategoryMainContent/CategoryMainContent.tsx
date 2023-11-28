@@ -9,7 +9,7 @@ const CategoryMainContent = () => {
       <CategoryFilter/>
       <S.ProductListHeader>
         <p>27,232개의 상품이 있습니다.</p>
-        <button>
+        <button type='button'>
           <p>신상품순</p>
           <IcArrowDown/>
         </button>

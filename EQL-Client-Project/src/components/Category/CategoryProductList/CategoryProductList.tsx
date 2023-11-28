@@ -6,7 +6,7 @@ import { useState } from 'react';
 const CategoryproductList = () => {
   const [page,setPage]=useState(1);
 
-  const handlePage=(num:number)=>{
+  const handlePageChange=(num:number)=>{
     setPage(num);
   }
   return (
@@ -35,9 +35,9 @@ const CategoryproductList = () => {
         ))}
       </S.ItemsWrapper>
       <S.PagenationNav>
-        <S.PagenationBtn $isSeleted={page===1} onClick={()=>handlePage(1)}>1</S.PagenationBtn>
-        <S.PagenationBtn $isSeleted={page===2} onClick={()=>handlePage(2)}>2</S.PagenationBtn>
-        <S.PagenationBtn $isSeleted={page===3} onClick={()=>handlePage(3)}>3</S.PagenationBtn>
+        <S.PagenationBtn type='button' $isSeleted={page===1} onClick={()=>handlePageChange(1)}>1</S.PagenationBtn>
+        <S.PagenationBtn type='button' $isSeleted={page===2} onClick={()=>handlePageChange(2)}>2</S.PagenationBtn>
+        <S.PagenationBtn type='button' $isSeleted={page===3} onClick={()=>handlePageChange(3)}>3</S.PagenationBtn>
         <IcArrowRight/>
       </S.PagenationNav>
     </S.Container>

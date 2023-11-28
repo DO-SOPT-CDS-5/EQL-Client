@@ -5,8 +5,8 @@ import CategoryMainContent from '../../components/Category/CategoryMainContent/C
 const Category = () => {
   return (<S.CategoryContainer>
     <S.CategoryWrapper>
-      <CategoryNav></CategoryNav>
-      <CategoryMainContent></CategoryMainContent>
+      <CategoryNav/>
+      <CategoryMainContent/>
     </S.CategoryWrapper>
 
   </S.CategoryContainer>);

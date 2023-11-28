@@ -40,17 +40,18 @@ export const ItemImg=styled.div`
 //브랜드 명
 export const ItemBrandTitle=styled.p`
   margin-top: 1.6rem;
-  font: ${({ theme }) => theme.fonts.body7};
+  ${({ theme }) => theme.fonts.body7};
+
   color: ${({ theme }) => theme.colors.black};
 `;
 //상품 명
 export const ItemProductTitle = styled.p`
   overflow: wrap;
-
   width: 100%;
   margin-bottom: 0.6rem;
 
-  font: ${({ theme }) => theme.fonts.body9};
+  ${({ theme }) => theme.fonts.body9};
+
   color: ${({ theme }) => theme.colors.grey1};
 `;
 
@@ -87,7 +88,8 @@ export const PagenationNav=styled.nav`
 
 export const PagenationBtn=styled.button<{$isSeleted:boolean}>`
   margin-left: 2.5rem;
-  font: ${({ $isSeleted,theme }) => $isSeleted? theme.fonts.body4:theme.fonts.body5};
+  ${({ $isSeleted,theme }) => $isSeleted? theme.fonts.body4:theme.fonts.body5};
+
   color: ${({ $isSeleted,theme }) => $isSeleted? theme.colors.black:theme.colors.grey2};
   
   &:nth-child(3){

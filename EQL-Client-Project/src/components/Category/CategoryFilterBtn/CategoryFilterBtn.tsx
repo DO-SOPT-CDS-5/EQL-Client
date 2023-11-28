@@ -7,7 +7,7 @@ type FilterPros = {
 
 const CategoryFilterBtn = ({content}:FilterPros) => {
   return (
-    <S.Container>
+    <S.Container type='button'>
       <p>{content}</p>
       <IcPlus/>
   </S.Container>
