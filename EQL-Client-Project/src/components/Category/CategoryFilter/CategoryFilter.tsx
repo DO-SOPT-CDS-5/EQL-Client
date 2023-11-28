@@ -1,6 +1,5 @@
-import React from 'react'
 import * as S from './CategoryFilter.style';
-import CategoryFilterBtn from '../CategoryFilterBtn/CategoryfilterBtn';
+import CategoryFilterBtn from '../CategoryFilterBtn/CategoryFilterBtn';
 import { IcUndo } from '../../../assets/svgs/0_icons';
 
 const CategoryFilter = () => {
