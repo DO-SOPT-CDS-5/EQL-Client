@@ -27,6 +27,7 @@ import {  ImgProduct1,
   ImgProduct27,
   ImgProduct28,
   ImgProduct29,
+
   ImgProduct30 } from "../assets/images/0_images.ts";
 
 export const PRODUCTIMGS=[
