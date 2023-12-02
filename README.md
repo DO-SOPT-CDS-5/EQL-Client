@@ -16,10 +16,10 @@ EQL 리디자인 합동 세미나 5조
 
 ## 👩🏻‍💻 팀원 소개 및 역할 분담
 
-| 신수연 [@SooY2](https://github.com/SooY2) | 이시연 [@SynthiaLee](https://github.com/SynthiaLee)  | 이재훈[@ljh0608](https://github.com/ljh0608) | 최준민 [@Jun-min2](https://github.com/Jun-min2) |
-| :---------------------------------------: | :--------------------------------------------------: | :------------------------------------------: | :---------------------------------------------: |
-|               Category Page               |                     Product Page                     |                  Order Page                  |                    Home Page                    |
-|          상품 전체 조회 API GET           | 상품 상세보기 API Get<br/>상품 장바구니 추가 API Put |            주문 정보 조회 API Get            |               컨텐츠 조회 API GET               |
+| 신수연 [@SooY2](https://github.com/SooY2) | 이시연 [@SynthiaLee](https://github.com/SynthiaLee) | 이재훈[@ljh0608](https://github.com/ljh0608) | 최준민 [@Jun-min2](https://github.com/Jun-min2) |
+| :---------------------------------------: | :-------------------------------------------------: | :------------------------------------------: | :---------------------------------------------: |
+|               Category Page               |                    Product Page                     |                  Order Page                  |                    Home Page                    |
+| 상품 전체 조회 API GET <br/>페이지네이션  |   상품 상세보기 API Get<br/>장바구니 추가 API Put   |            주문 정보 조회 API Get            |     컨텐츠 조회 API GET <br/>이미지 캐러셀      |
 
 <br />
 
@@ -32,8 +32,9 @@ EQL 리디자인 합동 세미나 5조
 | Programming Language | ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)                                                                                                                                                                                                             |
 | Formatting           | ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=white) ![StyleLint](https://img.shields.io/badge/stylelint-263238.svg?style=for-the-badge&logo=stylelint&logoColor=white) |
 | Package Manager      | ![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)                                                                                                                                                                                                                               |
+| Data Fetching        | ![Axios](https://img.shields.io/badge/Axios-5A29E4.svg?style=for-the-badge&logo=Axios&logoColor=white)                                                                                                                                                                                                                               |
+| Deployment           | ![Vercel](https://img.shields.io/badge/Vercel-000000.svg?style=for-the-badge&logo=Vercel&logoColor=white)                                                                                                                                                                                                                            |
 | Library              | React-Slick                                                                                                                                                                                                                                                                                                                          |
-|                      |
 
 <br />
 
